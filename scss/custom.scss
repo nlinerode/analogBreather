@@ -52,7 +52,7 @@ hr {
 /* SHOWCASE ****************************************************/
 .showcase{
   background-color: $alien;
-  background-image: url('/imgAB/analogBreather.jpg');
+  background-image: url('../imgAB/analogBreather.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,7 +88,7 @@ hr {
 .music{
   // margin-top: 15%;
   background-color: $alien;
-  margin: 15% 5% 0;
+  margin: 15% 0 0;
   padding: 50% 0;
   img{
     margin: auto;
@@ -103,7 +103,11 @@ hr {
   padding: 50% 0;
   .fb{
     margin: 0 auto 15%;
-    width: 25%;
+    width: 50%;
+  }
+  .insta{
+    margin: 0 auto 15%;
+    width: 50%;
   }
 }
 
@@ -281,6 +285,7 @@ hr {
       p{
         margin: auto;
         opacity: .7;
+        text-align: justify;
         a{
           color: inherit;
         }
@@ -291,7 +296,7 @@ hr {
       ul{
         list-style-type: none;
         margin: auto;
-        text-align: center;
+        text-align: justify;
         li{
           display: block;
           a{

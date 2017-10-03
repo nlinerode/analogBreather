@@ -28,7 +28,7 @@ hr {
   /* SHOWCASE ****************************************************/
   .showcase {
     background-color: #5d8965;
-    background-image: url("/imgAB/analogBreather.jpg");
+    background-image: url("../imgAB/analogBreather.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +54,7 @@ hr {
   /* MUSIC SECTION ****************************************************/
   .music {
     background-color: #5d8965;
-    margin: 15% 5% 0;
+    margin: 15% 0 0;
     padding: 50% 0; }
     .music img {
       margin: auto;
@@ -67,7 +67,10 @@ hr {
     padding: 50% 0; }
     .social .fb {
       margin: 0 auto 15%;
-      width: 25%; }
+      width: 50%; }
+    .social .insta {
+      margin: 0 auto 15%;
+      width: 50%; }
 
   /* CONTACT SECTION *******************************************************/
   .contact {
@@ -197,7 +200,8 @@ hr {
     padding: 2% 0; }
     footer p {
       margin: auto;
-      opacity: .7; }
+      opacity: .7;
+      text-align: justify; }
       footer p a {
         color: inherit; }
       footer p a:hover {
@@ -205,7 +209,7 @@ hr {
     footer ul {
       list-style-type: none;
       margin: auto;
-      text-align: center; }
+      text-align: justify; }
       footer ul li {
         display: block; }
         footer ul li a {
