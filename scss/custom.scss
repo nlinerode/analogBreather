@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// COLOR PALLETTE
+$white: #eee;
+$tan: #8c7457;
+$alien: #57805d;
+
+html{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: $tan;
+  color: $white;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+nav{
+  .navbar{
+    .navbar-default{
+      background-color: $tan !important;
+      border-color: #807160 !important;
+    }
+    .navbar-brand{
+      color: $white;
+    }
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(238, 238, 238, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media (min-width: 200px){
+
+  .container{
+    padding: 80px 120px;
+  }
+}
+
+.showcase{
+  // background-image: url('../imgAB/ABLogo.jpg');
+  background-image: url('../imgAB/analogBreather.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 16%;
+  padding: 10% 0 90%;
+  h3{
+    // margin-top: 50%;
+    padding-top: 50%;
+    opacity: .65;
+    text-transform: lowercase;
+  }
+}
+
+.band{
+  background-color: $tan;
+  // margin-top: 15%;
+  margin: 15% 5% 0;
+  text-align: center;
+  .member{
+    margin-top: 15%;
+    .member-desc{
+      margin-top: 10%;
+    }
+  }
+  .person{
+    margin: auto;
+  }
+
+}
+
+.music{
+  // margin-top: 15%;
+  margin: 15% 5% 0;
+  padding: 50% 0;
+  img{
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.social{
+  color: $white;
+  margin: 0 5%;
+  padding: 50% 0;
+  .fb{
+    margin: 0 auto 15%;
+    width: 25%;
+  }
+}
+
+.contact{
+  margin: auto;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  button{
+    background-color: $alien;
+    width: 100%;
+  }
+}
+
+footer{
+  background-color: #222;
+  border-color: #080808;
+  border-top: 1px solid;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  p{
+    opacity: .7;
+  }
+  ul{
+    list-style-type: none;
+    margin: auto;
+    text-align: left;
+    li{
+      display: inline-block;
+      a{
+        color:$white;
+      }
+      a:visited{
+        color: darken($white, 30%);
+      }
+    }
+  }
+}
