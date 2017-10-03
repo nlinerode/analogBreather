@@ -1,10 +1,12 @@
+// IMPORTS
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-// COLOR PALLETTE
+// GLOBAL COLORS
 $white: #eee;
 $tan: #8c7457;
-$alien: #57805d;
+$alien: #5d8965;
 
+//GLOBAL STYLES
 html{
   margin: 0;
   padding: 0;
@@ -18,6 +20,7 @@ body{
 }
 
 nav{
+  
   .navbar{
     .navbar-default{
       background-color: $tan !important;
@@ -25,6 +28,9 @@ nav{
     }
     .navbar-brand{
       color: $white;
+    }
+    a:hover{
+      color: $tan;
     }
   }
 }
@@ -35,16 +41,18 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(238, 238, 238, 0.75), rgba(0, 0, 0, 0));
 }
 
+/* MEDIA MIN 200PX ********************************************************************************************************** */
 @media (min-width: 200px){
 
-  .container{
-    padding: 80px 120px;
-  }
-}
+//   .container{
+//     padding: 80px 120px;
+//   }
+// }
 
+/* SHOWCASE ****************************************************/
 .showcase{
-  // background-image: url('../imgAB/ABLogo.jpg');
-  background-image: url('../imgAB/analogBreather.jpg');
+  background-color: $alien;
+  background-image: url('/imgAB/analogBreather.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,6 +66,7 @@ hr {
   }
 }
 
+/* BAND SECTION ************************************************/
 .band{
   background-color: $tan;
   // margin-top: 15%;
@@ -75,8 +84,10 @@ hr {
 
 }
 
+/* MUSIC SECTION ****************************************************/
 .music{
   // margin-top: 15%;
+  background-color: $alien;
   margin: 15% 5% 0;
   padding: 50% 0;
   img{
@@ -85,6 +96,7 @@ hr {
   }
 }
 
+/* SOCIAL SECTION ********************************************************/
 .social{
   color: $white;
   margin: 0 5%;
@@ -95,6 +107,7 @@ hr {
   }
 }
 
+/* CONTACT SECTION *******************************************************/
 .contact{
   margin: auto;
   padding-top: 25%;
@@ -105,27 +118,192 @@ hr {
   }
 }
 
-footer{
-  background-color: #222;
-  border-color: #080808;
-  border-top: 1px solid;
-  padding-top: 5%;
-  padding-bottom: 10%;
-  p{
-    opacity: .7;
-  }
-  ul{
-    list-style-type: none;
-    margin: auto;
-    text-align: left;
-    li{
-      display: inline-block;
+  /* FOOTER ********************************************************/
+  footer{
+    background-color: #222;
+    border-top: 1px solid #080808;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    p{
+      margin: auto;
+      opacity: .7;
       a{
-        color:$white;
+        color: inherit;
       }
-      a:visited{
-        color: darken($white, 30%);
+      a:hover{
+        color:$tan;
+      }
+    }
+    ul{
+      list-style-type: none;
+      margin: auto;
+      text-align: left;
+      li{
+        display: inline-block;
+        a{
+          color:$white;
+        }
+        a:hover{
+          color: $tan;
+        }
+        a:visited{
+          color: darken($white, 30%);
+        }
       }
     }
   }
+
+
+}
+
+/* MEDIA MIN 1000px *********************************************************************************************************************************/
+@media (min-width: 1000px){
+    hr{
+      display: none;
+    }
+
+
+    /* SHOWCASE SECTION****************************************************/
+    .showcase{
+      background-size: contain;
+      margin-top: 0;
+      padding: 0;
+      h3{
+        margin-top:0;
+        padding: 25% 0;
+        opacity: .65;
+        text-transform: lowercase;
+      }
+    }
+
+    /* BAND SECTION ************************************************/
+  .band{
+    background-color: $tan;
+    // margin-top: 15%;
+    margin: 5% 5% 7%;
+    text-align: center;
+    
+    h4{
+      margin-bottom: 7%;
+    }
+    
+    .member{              //column for members
+      margin-top: 5%;
+      .member-desc{       //caption for image
+        margin-top: 10%;
+      }
+    }
+    
+    .person{              //image itself
+      margin: auto;
+      width: 50%;
+    }
+  }
+
+    /* MUSIC SECTION ****************************************************/
+  .music{
+    // margin-top: 15%;
+    background-color: $alien;
+    margin: 15% 0 0;
+    padding: 10% 0;
+    h4{
+      font-size: 3rem;
+    }
+    img{
+      margin: auto;
+      width: 40%;
+    }
+  }
+
+    /* SOCIAL SECTION ********************************************************/
+  .social{
+    color: $white;
+    margin: 0;
+    padding: 7% 0;
+    h4{
+      margin-top: 5%;
+    }
+    .fb{
+      margin: 0 auto;
+      width: 70%;
+    }
+    .insta{
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+
+    /* CONTACT SECTION *******************************************************/
+  .contact{
+    background-color: $alien;
+    margin: auto;
+    padding: 5% 0;
+    
+      .form-group{
+        margin: 2% auto;
+        text-align: left;
+        width: 50%;
+        .form-control:focus{
+          border: 2px solid $tan;
+          outline: none;
+        }
+      }
+    textarea{
+      outline: none;
+      resize:none;
+      transition: all 1s;
+    }
+    textarea:focus{
+      border: 2px solid $tan;
+      height: 100px;
+      outline: none;
+    }
+    button{
+      background-color: $tan;
+      border: 1px solid #706150;
+      font-size: 2rem;
+      padding: 20px 0;
+      width: 20%;
+    }
+    button:focus{
+      outline: none;
+    }
+    button:hover{
+      color: darken($white, 10%);
+    }
+  }
+
+    /* FOOTER ********************************************************/
+    footer{
+      background-color: #222;
+      border-top: 1px solid #080808;
+      padding: 2% 0;
+      p{
+        margin: auto;
+        opacity: .7;
+        a{
+          color: inherit;
+        }
+        a:hover{
+          color:$tan;
+        }
+      }
+      ul{
+        list-style-type: none;
+        margin: auto;
+        text-align: center;
+        li{
+          display: block;
+          a{
+            color:$white;
+          }
+          a:hover{
+            color: $tan;
+          }
+          a:visited{
+            color: darken($white, 30%);
+          }
+        }
+      }
+    }
 }

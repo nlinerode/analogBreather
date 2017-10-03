@@ -15,78 +15,204 @@ nav .navbar .navbar-default {
   border-color: #807160 !important; }
 nav .navbar .navbar-brand {
   color: #eee; }
+nav .navbar a:hover {
+  color: #8c7457; }
 
 hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(238, 238, 238, 0.75), rgba(0, 0, 0, 0)); }
 
+/* MEDIA MIN 200PX ********************************************************************************************************** */
 @media (min-width: 200px) {
-  .container {
-    padding: 80px 120px; } }
-.showcase {
-  background-image: url("../imgAB/analogBreather.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 16%;
-  padding: 10% 0 90%; }
-  .showcase h3 {
-    padding-top: 50%;
-    opacity: .65;
-    text-transform: lowercase; }
+  /* SHOWCASE ****************************************************/
+  .showcase {
+    background-color: #5d8965;
+    background-image: url("/imgAB/analogBreather.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 16%;
+    padding: 10% 0 90%; }
+    .showcase h3 {
+      padding-top: 50%;
+      opacity: .65;
+      text-transform: lowercase; }
 
-.band {
-  background-color: #8c7457;
-  margin: 15% 5% 0;
-  text-align: center; }
-  .band .member {
-    margin-top: 15%; }
-    .band .member .member-desc {
-      margin-top: 10%; }
-  .band .person {
-    margin: auto; }
+  /* BAND SECTION ************************************************/
+  .band {
+    background-color: #8c7457;
+    margin: 15% 5% 0;
+    text-align: center; }
+    .band .member {
+      margin-top: 15%; }
+      .band .member .member-desc {
+        margin-top: 10%; }
+    .band .person {
+      margin: auto; }
 
-.music {
-  margin: 15% 5% 0;
-  padding: 50% 0; }
-  .music img {
+  /* MUSIC SECTION ****************************************************/
+  .music {
+    background-color: #5d8965;
+    margin: 15% 5% 0;
+    padding: 50% 0; }
+    .music img {
+      margin: auto;
+      width: 80%; }
+
+  /* SOCIAL SECTION ********************************************************/
+  .social {
+    color: #eee;
+    margin: 0 5%;
+    padding: 50% 0; }
+    .social .fb {
+      margin: 0 auto 15%;
+      width: 25%; }
+
+  /* CONTACT SECTION *******************************************************/
+  .contact {
     margin: auto;
-    width: 80%; }
+    padding-top: 25%;
+    padding-bottom: 25%; }
+    .contact button {
+      background-color: #5d8965;
+      width: 100%; }
 
-.social {
-  color: #eee;
-  margin: 0 5%;
-  padding: 50% 0; }
-  .social .fb {
-    margin: 0 auto 15%;
-    width: 25%; }
+  /* FOOTER ********************************************************/
+  footer {
+    background-color: #222;
+    border-top: 1px solid #080808;
+    padding-top: 5%;
+    padding-bottom: 10%; }
+    footer p {
+      margin: auto;
+      opacity: .7; }
+      footer p a {
+        color: inherit; }
+      footer p a:hover {
+        color: #8c7457; }
+    footer ul {
+      list-style-type: none;
+      margin: auto;
+      text-align: left; }
+      footer ul li {
+        display: inline-block; }
+        footer ul li a {
+          color: #eee; }
+        footer ul li a:hover {
+          color: #8c7457; }
+        footer ul li a:visited {
+          color: #a2a2a2; } }
+/* MEDIA MIN 1000px *********************************************************************************************************************************/
+@media (min-width: 1000px) {
+  hr {
+    display: none; }
 
-.contact {
-  margin: auto;
-  padding-top: 25%;
-  padding-bottom: 25%; }
-  .contact button {
-    background-color: #57805d;
-    width: 100%; }
+  /* SHOWCASE SECTION****************************************************/
+  .showcase {
+    background-size: contain;
+    margin-top: 0;
+    padding: 0; }
+    .showcase h3 {
+      margin-top: 0;
+      padding: 25% 0;
+      opacity: .65;
+      text-transform: lowercase; }
 
-footer {
-  background-color: #222;
-  border-color: #080808;
-  border-top: 1px solid;
-  padding-top: 5%;
-  padding-bottom: 10%; }
-  footer p {
-    opacity: .7; }
-  footer ul {
-    list-style-type: none;
+  /* BAND SECTION ************************************************/
+  .band {
+    background-color: #8c7457;
+    margin: 5% 5% 7%;
+    text-align: center; }
+    .band h4 {
+      margin-bottom: 7%; }
+    .band .member {
+      margin-top: 5%; }
+      .band .member .member-desc {
+        margin-top: 10%; }
+    .band .person {
+      margin: auto;
+      width: 50%; }
+
+  /* MUSIC SECTION ****************************************************/
+  .music {
+    background-color: #5d8965;
+    margin: 15% 0 0;
+    padding: 10% 0; }
+    .music h4 {
+      font-size: 3rem; }
+    .music img {
+      margin: auto;
+      width: 40%; }
+
+  /* SOCIAL SECTION ********************************************************/
+  .social {
+    color: #eee;
+    margin: 0;
+    padding: 7% 0; }
+    .social h4 {
+      margin-top: 5%; }
+    .social .fb {
+      margin: 0 auto;
+      width: 70%; }
+    .social .insta {
+      margin: 0 auto;
+      width: 70%; }
+
+  /* CONTACT SECTION *******************************************************/
+  .contact {
+    background-color: #5d8965;
     margin: auto;
-    text-align: left; }
-    footer ul li {
-      display: inline-block; }
-      footer ul li a {
-        color: #eee; }
-      footer ul li a:visited {
-        color: #a2a2a2; }
+    padding: 5% 0; }
+    .contact .form-group {
+      margin: 2% auto;
+      text-align: left;
+      width: 50%; }
+      .contact .form-group .form-control:focus {
+        border: 2px solid #8c7457;
+        outline: none; }
+    .contact textarea {
+      outline: none;
+      resize: none;
+      transition: all 1s; }
+    .contact textarea:focus {
+      border: 2px solid #8c7457;
+      height: 100px;
+      outline: none; }
+    .contact button {
+      background-color: #8c7457;
+      border: 1px solid #706150;
+      font-size: 2rem;
+      padding: 20px 0;
+      width: 20%; }
+    .contact button:focus {
+      outline: none; }
+    .contact button:hover {
+      color: #d5d5d5; }
+
+  /* FOOTER ********************************************************/
+  footer {
+    background-color: #222;
+    border-top: 1px solid #080808;
+    padding: 2% 0; }
+    footer p {
+      margin: auto;
+      opacity: .7; }
+      footer p a {
+        color: inherit; }
+      footer p a:hover {
+        color: #8c7457; }
+    footer ul {
+      list-style-type: none;
+      margin: auto;
+      text-align: center; }
+      footer ul li {
+        display: block; }
+        footer ul li a {
+          color: #eee; }
+        footer ul li a:hover {
+          color: #8c7457; }
+        footer ul li a:visited {
+          color: #a2a2a2; } }
 
 /*# sourceMappingURL=custom.css.map */
