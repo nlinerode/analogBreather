@@ -35,11 +35,12 @@ nav{
   }
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(238, 238, 238, 0.75), rgba(0, 0, 0, 0));
-}
+// hr {
+//   display:none;
+//   border: 0;
+//   height: 1px;
+//   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(238, 238, 238, 0.75), rgba(0, 0, 0, 0));
+// }
 
 /* MEDIA MIN 200PX ********************************************************************************************************** */
 @media (min-width: 200px){
@@ -89,7 +90,7 @@ hr {
   // margin-top: 15%;
   background-color: $alien;
   margin: 15% 0 0;
-  padding: 50% 0;
+  padding: 50% 5%;
   img{
     margin: auto;
     width: 80%;
@@ -113,12 +114,20 @@ hr {
 
 /* CONTACT SECTION *******************************************************/
 .contact{
+  background-color: $alien;
   margin: auto;
   padding-top: 25%;
   padding-bottom: 25%;
   button{
-    background-color: $alien;
+    background-color: $tan;
+    border: 1px solid #706150;
     width: 100%;
+  }
+  button:focus{
+    outline: none;
+  }
+  button:hover{
+    color: darken($white, 10%);
   }
 }
 
@@ -162,9 +171,9 @@ hr {
 
 /* MEDIA MIN 1000px *********************************************************************************************************************************/
 @media (min-width: 1000px){
-    hr{
-      display: none;
-    }
+    // hr{
+    //   display: none;
+    // }
 
 
     /* SHOWCASE SECTION****************************************************/
@@ -239,7 +248,6 @@ hr {
 
     /* CONTACT SECTION *******************************************************/
   .contact{
-    background-color: $alien;
     margin: auto;
     padding: 5% 0;
     
