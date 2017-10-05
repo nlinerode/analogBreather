@@ -60,24 +60,25 @@ a.top {
         margin-top: 10%; }
     .band .person {
       margin: auto; }
+    .band .about-btn {
+      color: #eee;
+      background-color: #5d8965;
+      margin-top: 15%; }
+    .band .about-btn:hover {
+      background-color: #537a5a; }
 
-  /* MUSIC SECTION ****************************************************/
+  /* MUSIC/SOCIAL SECTION ****************************************************/
   .music {
-    background-color: #5d8965;
-    margin: 15% 0 0;
-    padding: 50% 5%; }
-    .music img {
-      margin: auto;
-      width: 80%; }
-
-  /* SOCIAL SECTION ********************************************************/
-  .social {
+    background-color: #8c7457;
     color: #eee;
-    margin: 0 5%;
-    padding: 50% 0; }
-    .social .social-image {
+    margin: 5% 0 0;
+    padding: 50% 5%; }
+    .music .social-image {
       margin: 0 auto 15%;
-      width: 50%; }
+      width: 35%; }
+    .music .bc-img {
+      margin: auto;
+      width: 70%; }
 
   /* CONTACT SECTION *******************************************************/
   .contact {
@@ -132,6 +133,9 @@ a.top {
 /* MEDIA MIN 400px ************************************************************************************************************************************/
 @media (min-width: 400px) {
   .showcase {
+    margin-top: 10%; }
+
+  .band .about-btn {
     margin-top: 10%; } }
 /* MEDIA MIN 500px ************************************************************************************************************************************/
 @media (min-width: 500px) {
@@ -149,9 +153,12 @@ a.top {
 
   .music {
     padding: 30% 5%; }
-    .music img {
+    .music .social-image {
+      margin: 0 auto 15%;
+      width: 35%; }
+    .music .bc-img {
       margin: auto;
-      width: 60%; }
+      width: 70%; }
 
   footer {
     padding: 5% 0 3%; }
@@ -162,11 +169,21 @@ a.top {
   .showcase {
     margin-top: 6%; }
 
-  .social {
+  .band .about-btn {
+    margin-top: 8%; }
+
+  /* MUSIC/SOCIAL SECTION ****************************************************/
+  .music {
     padding: 15% 0; }
-    .social .social-image {
+    .music .social-image {
+      margin: 0 auto 15%;
+      width: 35%; }
+    .music .social-image {
       margin: 0 auto;
-      width: 30%; } }
+      width: 30%; }
+    .music .bc-img {
+      margin: auto;
+      width: 70%; } }
 /* MEDIA MIN 700px ************************************************************************************************************************************/
 @media (min-width: 700px) {
   .contact {
@@ -182,21 +199,22 @@ a.top {
     footer p {
       text-align: justify; }
 
+  /* MUSIC/SOCIAL SECTION ****************************************************/
   .music {
     padding: 15% 5%; }
-    .music img {
+    .music .social-image {
+      margin: 0 auto 15%;
+      width: 80%; }
+    .music .bc-img {
       margin: auto;
-      width: 50%; }
-
-  .social {
-    padding: 10% 0; }
-    .social .social-image {
-      margin: 0 auto;
-      width: 30%; } }
+      width: 60%; } }
 /* MEDIA MIN 800px ************************************************************************************************************************************/
 @media (min-width: 800px) {
   .showcase {
     margin-top: 5%; }
+
+  .band .about-btn {
+    margin-top: 10%; }
 
   .contact {
     padding: 8% 0 12%; }
@@ -235,26 +253,17 @@ a.top {
 
   /* MUSIC SECTION ****************************************************/
   .music {
-    background-color: #5d8965;
-    margin: 15% 0 0;
-    padding: 10% 0; }
+    margin: 5% 0 0;
+    padding: 8% 0; }
+    .music .social-image {
+      margin: 0 auto;
+      width: 55%; }
+    .music .bc-img {
+      width: 50%; }
     .music h4 {
       font-size: 3rem; }
-    .music img {
-      margin: auto;
-      width: 40%; }
 
   /* SOCIAL SECTION ********************************************************/
-  .social {
-    color: #eee;
-    margin: 0;
-    padding: 7% 0; }
-    .social h4 {
-      margin-top: 5%; }
-    .social .social-image {
-      margin: 0 auto;
-      width: 70%; }
-
   /* CONTACT SECTION *******************************************************/
   .contact {
     margin: auto;
