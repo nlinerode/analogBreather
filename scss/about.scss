@@ -1,0 +1,33 @@
+@import 'custom';
+
+@media(min-width: 1000px){
+  /* SHOWCASE SECTION****************************************************/
+  .showcase{
+    background-size: contain;
+    margin-top: 3%;
+    padding: 0;
+    h3{
+      margin-top:0;
+      padding:10% 0;
+      opacity: .65;
+      text-transform: lowercase;
+    }
+  }
+
+
+      /* MUSIC SECTION ****************************************************/
+      .music{
+        // margin-top: 15%;
+        background-color: $alien;
+        margin: 15% 0 0;
+        padding: 3% 0;
+        h4{
+          font-size: 3rem;
+        }
+        .social-image{
+          margin: auto;
+          width: 30%;
+        }
+      }
+    
+}

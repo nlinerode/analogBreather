@@ -311,5 +311,27 @@ a.top {
           color: #8c7457; }
         footer ul li a:visited {
           color: #a2a2a2; } }
+@media (min-width: 1000px) {
+  /* SHOWCASE SECTION****************************************************/
+  .showcase {
+    background-size: contain;
+    margin-top: 3%;
+    padding: 0; }
+    .showcase h3 {
+      margin-top: 0;
+      padding: 10% 0;
+      opacity: .65;
+      text-transform: lowercase; }
 
-/*# sourceMappingURL=custom.css.map */
+  /* MUSIC SECTION ****************************************************/
+  .music {
+    background-color: #5d8965;
+    margin: 15% 0 0;
+    padding: 3% 0; }
+    .music h4 {
+      font-size: 3rem; }
+    .music .social-image {
+      margin: auto;
+      width: 30%; } }
+
+/*# sourceMappingURL=about.css.map */

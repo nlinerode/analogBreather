@@ -22,16 +22,38 @@ body{
 nav{
   
   .navbar{
-    .navbar-default{
-      background-color: $tan !important;
-      border-color: #807160 !important;
-    }
+    // .dropdown-menu{
+    //   color: #080808 !important;
+    // }
     .navbar-brand{
       color: $white;
     }
     a:hover{
       color: $tan;
     }
+  }
+}
+
+.row{ //Remove gutter from all rows
+  margin-right: 0;
+  margin-left: 0;
+}
+
+a.top{
+  background-color: #585757;
+  border-radius: 3px;
+  bottom: 2%;
+  color: $white;
+  opacity: .4;
+  padding: 5px;
+  position: fixed;
+  right: 1%;
+  transition: all .3s;
+  z-index: 100;
+  .top:hover{
+    // background-color: black;
+    // color: white !important;
+    opacity: 1 !important;
   }
 }
 
@@ -102,11 +124,7 @@ nav{
   color: $white;
   margin: 0 5%;
   padding: 50% 0;
-  .fb{
-    margin: 0 auto 15%;
-    width: 50%;
-  }
-  .insta{
+  .social-image{
     margin: 0 auto 15%;
     width: 50%;
   }
@@ -135,8 +153,7 @@ nav{
   footer{
     background-color: #222;
     border-top: 1px solid #080808;
-    padding-top: 5%;
-    padding-bottom: 10%;
+    padding: 5% 0 10%;
     p{
       margin: auto;
       opacity: .7;
@@ -165,8 +182,149 @@ nav{
       }
     }
   }
+}
+
+/* MEDIA MIN 300px ************************************************************************************************************************************/
+@media (min-width: 300px){
+  .showcase{
+    margin-top: 13%;
+  }
+
+  /* SOCIAL SECTION ********************************************************/
+  .social{
+    padding: 25% 0;
+    .social-image{
+      margin: 0 auto;
+      width: 50%;
+    }
+  }
+}
 
 
+/* MEDIA MIN 400px ************************************************************************************************************************************/
+@media (min-width: 400px){
+  .showcase{
+    margin-top: 10%;
+  }
+  
+}
+
+/* MEDIA MIN 500px ************************************************************************************************************************************/
+@media (min-width: 500px){
+  .showcase{
+    margin-top: 8%;
+  }
+
+  /* CONTACT SECTION *******************************************************/
+.contact{
+  padding: 15% 0 20%;
+  .form-control{
+    margin: auto;
+    width: 90%;
+  }
+  button{
+    width: 90%;
+  }
+}
+
+// MUSIC SECTION *****************************************************
+.music{
+  padding: 30% 5%;
+  img{
+    margin: auto;
+    width: 60%;
+  }
+}
+
+  footer{
+    padding: 5% 0 3%;
+    p{
+      text-align: justify;
+    }
+  }
+
+}
+
+/* MEDIA MIN 600px ************************************************************************************************************************************/
+@media (min-width: 600px){
+  .showcase{
+    margin-top: 6%;
+  }
+  
+  //SOCIAL SECTION **************************
+  .social{
+    padding: 15% 0;
+    .social-image{
+      margin: 0 auto;
+      width: 30%;
+    }
+  }
+}
+
+/* MEDIA MIN 700px ************************************************************************************************************************************/
+@media (min-width: 700px){
+  // .showcase{
+  //   padding: 10% 0 30%;
+  //   h3{
+  //     padding-top: 20%;
+  //   }
+  // }
+
+  // CONTACT **********************************
+  .contact{
+    padding: 10% 0 15%;
+    .form-control{
+      margin: auto;
+      width: 80%;
+    }
+    button{
+      width: 80%;
+    }
+  }
+
+  footer{
+    padding: 5% 0 3%;
+    p{
+      text-align: justify;
+    }
+  }
+  // MUSIC SECTION *****************************************
+  .music{
+    padding: 15% 5%;
+    img{
+      margin: auto;
+      width: 50%;
+    }
+  }
+
+  //SOCIAL SECTION **************************
+  .social{
+    padding: 10% 0;
+    .social-image{
+      margin: 0 auto;
+      width: 30%;
+    }
+  }
+  
+}
+
+/* MEDIA MIN 800px ************************************************************************************************************************************/
+@media (min-width: 800px){
+  .showcase{
+    margin-top: 5%;
+  }
+
+  // CONTACT **********************************
+  .contact{
+    padding: 8% 0 12%;
+    .form-control{
+      margin: auto;
+      width: 75%;
+    }
+    button{
+      width: 75%;
+    }
+  }
 }
 
 /* MEDIA MIN 1000px *********************************************************************************************************************************/
@@ -179,7 +337,7 @@ nav{
     /* SHOWCASE SECTION****************************************************/
     .showcase{
       background-size: contain;
-      margin-top: 0;
+      margin-top: 3%;
       padding: 0;
       h3{
         margin-top:0;
@@ -236,11 +394,7 @@ nav{
     h4{
       margin-top: 5%;
     }
-    .fb{
-      margin: 0 auto;
-      width: 70%;
-    }
-    .insta{
+    .social-image{
       margin: 0 auto;
       width: 70%;
     }
@@ -249,12 +403,13 @@ nav{
     /* CONTACT SECTION *******************************************************/
   .contact{
     margin: auto;
-    padding: 5% 0;
+    padding: 5% 0 7%;
     
       .form-group{
         margin: 2% auto;
-        text-align: left;
-        width: 50%;
+        .form-control{
+          width: 60%;
+        }
         .form-control:focus{
           border: 2px solid $tan;
           outline: none;
@@ -274,8 +429,9 @@ nav{
       background-color: $tan;
       border: 1px solid #706150;
       font-size: 2rem;
-      padding: 20px 0;
-      width: 20%;
+      margin-top: 1%;
+      padding: 15px 0;
+      width: 35%;
     }
     button:focus{
       outline: none;
