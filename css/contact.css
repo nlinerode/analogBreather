@@ -297,33 +297,40 @@ a.top {
         outline: none; }
       .showcase form button:hover {
         background-color: #836c51;
-        color: #d5d5d5; } }
+        color: #d5d5d5; }
+      .showcase form textarea {
+        outline: none;
+        resize: none;
+        transition: all 1s; }
+      .showcase form textarea:focus {
+        border: 2px solid #8c7457;
+        height: 100px;
+        outline: none; } }
 /* MEDIA MIN 300px ************************************************************************************************************************************/
 @media (min-width: 300px) {
   /* SHOWCASE ****************************************************/
   .showcase {
     margin-top: 16%;
-    padding: 0 0 20%; }
+    padding: 0 0 50%; }
     .showcase h3 {
       padding: 10% 0; } }
 /* MEDIA MIN 400px ************************************************************************************************************************************/
 @media (min-width: 400px) {
   /* SHOWCASE ****************************************************/
   .showcase {
-    margin-top: 16%;
-    padding: 0 0 20%; } }
+    margin-top: 16%; } }
 /* MEDIA MIN 500px ************************************************************************************************************************************/
 @media (min-width: 500px) {
   /* SHOWCASE ****************************************************/
   .showcase {
     margin-top: 13%;
-    padding: 0 0 20%; } }
+    padding: 0 0 40%; } }
 /* MEDIA MIN 600px ************************************************************************************************************************************/
 @media (min-width: 600px) {
   /* SHOWCASE ****************************************************/
   .showcase {
     margin-top: 8%;
-    padding: 0 0 20%; }
+    padding: 0 0 30%; }
     .showcase form {
       margin: auto; }
       .showcase form .form-control {
@@ -338,7 +345,7 @@ a.top {
   /* SHOWCASE ****************************************************/
   .showcase {
     margin-top: 16%;
-    padding: 0 0 20%; }
+    padding: 0 0 30%; }
     .showcase form {
       margin: auto; }
       .showcase form button {
@@ -353,7 +360,7 @@ a.top {
   /* SHOWCASE ****************************************************/
   .showcase {
     margin-top: 5%;
-    padding: 0 0 20%; }
+    padding: 0 0 25%; }
     .showcase form .form-control {
       width: 80%; }
     .showcase form button {

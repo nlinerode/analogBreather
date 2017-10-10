@@ -37,6 +37,16 @@
       background-color: darken($tan, 3%);
       color: darken($white, 10%);
     }
+    textarea{
+      outline: none;
+      resize:none;
+      transition: all 1s;
+    }
+    textarea:focus{
+      border: 2px solid $tan;
+      height: 100px;
+      outline: none;
+    }
   }
   
 }
@@ -55,7 +65,7 @@
   /* SHOWCASE ****************************************************/
   .showcase{
     margin-top: 16%;
-    padding: 0 0 20%;
+    padding: 0 0 50%;
     h3{
       padding: 10% 0;
     }
@@ -67,7 +77,7 @@
 /* SHOWCASE ****************************************************/
   .showcase{
     margin-top: 16%;
-    padding: 0 0 20%;
+    // padding: 0 0 20%;
   }
 }
 
@@ -77,7 +87,7 @@
 /* SHOWCASE ****************************************************/
   .showcase{
     margin-top: 13%;
-    padding: 0 0 20%;
+    padding: 0 0 40%;
   }
 }
 
@@ -87,7 +97,7 @@
   /* SHOWCASE ****************************************************/
     .showcase{
     margin-top: 8%;
-    padding: 0 0 20%;
+    padding: 0 0 30%;
     form{
       margin: auto;
       .form-control{
@@ -108,7 +118,7 @@
   /* SHOWCASE ****************************************************/
   .showcase{
     margin-top: 16%;
-    padding: 0 0 20%;
+    padding: 0 0 30%;
     form{
       margin: auto;
       button{
@@ -130,7 +140,7 @@
   /* SHOWCASE ****************************************************/
     .showcase{
     margin-top: 5%;
-    padding: 0 0 20%;
+    padding: 0 0 25%;
     form{
       .form-control{
         width: 80%;
