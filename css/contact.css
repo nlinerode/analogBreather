@@ -286,21 +286,18 @@ a.top {
       text-transform: lowercase; }
     .showcase form {
       margin: auto; }
+      .showcase form .form-control {
+        box-shadow: 1px 3px 5px #555555; }
       .showcase form button {
         background-color: #8c7457;
         border: 1px solid #706150;
+        box-shadow: 1px 3px 5px #555555;
         width: 100%; }
       .showcase form button:focus {
         outline: none; }
       .showcase form button:hover {
         background-color: #836c51;
-        color: #d5d5d5; }
-
-  footer {
-    font-size: 1rem;
-    height: 3%; }
-    footer p {
-      text-align: center; } }
+        color: #d5d5d5; } }
 /* MEDIA MIN 300px ************************************************************************************************************************************/
 @media (min-width: 300px) {
   /* SHOWCASE ****************************************************/
@@ -391,12 +388,6 @@ a.top {
       font-size: 2rem;
       margin-top: 1%;
       padding: 15px 0;
-      width: 35%; }
-
-  footer {
-    height: 3%; }
-    footer p {
-      font-size: 1.2rem;
-      text-align: center; } }
+      width: 35%; } }
 
 /*# sourceMappingURL=contact.css.map */

@@ -294,7 +294,10 @@ a.top {
       .band .member .member-desc {
         margin-top: 10%; }
     .band .person {
-      margin: auto; }
+      border-radius: 10px;
+      box-shadow: 1px 3px 5px #555555;
+      margin: auto;
+      opacity: .7; }
     .band .about-btn {
       color: #eee;
       background-color: #5d8965;
