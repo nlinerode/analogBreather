@@ -1,0 +1,197 @@
+@import 'custom';
+
+/* MEDIA MIN 200PX ********************************************************************************************************** */
+@media (min-width: 200px){
+
+/* SHOWCASE ****************************************************/
+.showcase{
+  background-color: $alien;
+  background-image: url('../imgAB/analogBreather.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 16%;
+  padding: 10% 0 50%;
+  h3{
+    // margin-top: 50%;
+    padding: 15% 0 10%;
+    opacity: .65;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
+    text-transform: lowercase; 
+  }
+  form{
+    margin: auto;
+    button{
+      background-color: $tan;
+      border: 1px solid #706150;
+      width: 100%;
+    }
+    button:focus{
+      outline: none;
+    }
+    button:hover{
+      background-color: darken($tan, 3%);
+      color: darken($white, 10%);
+    }
+  }
+  
+}
+footer{
+  font-size: 1rem;
+  height: 3%;
+  p{
+    text-align: center;
+  }
+}
+}
+
+  
+/* MEDIA MIN 300px ************************************************************************************************************************************/
+@media (min-width: 300px){
+  /* SHOWCASE ****************************************************/
+  .showcase{
+    margin-top: 16%;
+    padding: 0 0 20%;
+    h3{
+      padding: 10% 0;
+    }
+  }
+}
+
+/* MEDIA MIN 400px ************************************************************************************************************************************/
+@media (min-width: 400px){
+/* SHOWCASE ****************************************************/
+  .showcase{
+    margin-top: 16%;
+    padding: 0 0 20%;
+  }
+}
+
+
+/* MEDIA MIN 500px ************************************************************************************************************************************/
+@media (min-width: 500px){
+/* SHOWCASE ****************************************************/
+  .showcase{
+    margin-top: 13%;
+    padding: 0 0 20%;
+  }
+}
+
+
+/* MEDIA MIN 600px ************************************************************************************************************************************/
+@media (min-width: 600px){
+  /* SHOWCASE ****************************************************/
+    .showcase{
+    margin-top: 8%;
+    padding: 0 0 20%;
+    form{
+      margin: auto;
+      .form-control{
+        margin: auto;
+        width: 75%;
+      }
+      button{
+        width: 75%;
+      }
+      button:focus{
+        outline: none;
+      }
+    } 
+  }
+}
+/* MEDIA MIN 700px ************************************************************************************************************************************/
+@media (min-width: 700px){
+  /* SHOWCASE ****************************************************/
+  .showcase{
+    margin-top: 16%;
+    padding: 0 0 20%;
+    form{
+      margin: auto;
+      button{
+        width: 75%;
+      }
+      button:focus{
+        outline: none;
+      }
+      button:hover{
+        background-color: darken($tan, 3%);
+        color: darken($white, 10%);
+      }
+    }
+  }
+}
+
+/* MEDIA MIN 800px ************************************************************************************************************************************/
+@media (min-width: 800px){
+  /* SHOWCASE ****************************************************/
+    .showcase{
+    margin-top: 5%;
+    padding: 0 0 20%;
+    form{
+      .form-control{
+        width: 80%;
+      }
+      button{
+        width: 60%;
+      }
+    }
+  }
+}
+
+/* MEDIA MIN 1000px *********************************************************************************************************************************/
+@media (min-width: 1000px){
+
+    /* SHOWCASE SECTION****************************************************/
+    .showcase{
+      background-size: contain;
+      margin-top: 3%;
+      padding: 0 0 10%;
+      h3{
+        // margin-top:0;
+        padding: 8% 0 4%;
+      }
+      form{
+        .form-group{
+          margin: 2% auto;
+          .form-control{
+            width: 60%;
+          }
+          .form-control:focus{
+            border: 2px solid $tan;
+            outline: none;
+          }
+        }
+        textarea{
+          outline: none;
+          resize:none;
+          transition: all 1s;
+        }
+        textarea:focus{
+          border: 2px solid $tan;
+          height: 100px;
+          outline: none;
+        }
+        button{
+          background-color: $tan;
+          border: 1px solid #706150;
+          font-size: 2rem;
+          margin-top: 1%;
+          padding: 15px 0;
+          width: 35%;
+        }
+  
+      }
+      }
+      footer{
+        
+        height: 3%;
+        p{
+          font-size: 1.2rem;
+          text-align: center;
+        }
+      }
+    
+      
+   
+
+  }

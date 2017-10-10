@@ -268,5 +268,28 @@ a.top {
           color: #8c7457; }
         footer ul li a:visited {
           color: #a2a2a2; } }
+@media (min-width: 200px) {
+  .blog .post {
+    background-color: #8c7457;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px #555555;
+    margin-bottom: 15%;
+    padding: 5%;
+    text-align: justify; }
+    .blog .post h3 {
+      margin: 3%; }
+    .blog .post .author {
+      text-transform: lowercase;
+      text-indent: 10px; } }
+@media (min-width: 1000px) {
+  .blog .post {
+    margin-bottom: 5%;
+    padding: 3%;
+    text-align: justify; }
+    .blog .post h3 {
+      margin: 3%; }
+    .blog .post .author {
+      text-transform: lowercase;
+      text-indent: 10px; } }
 
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=blog.css.map */

@@ -268,5 +268,135 @@ a.top {
           color: #8c7457; }
         footer ul li a:visited {
           color: #a2a2a2; } }
+/* MEDIA MIN 200PX ********************************************************************************************************** */
+@media (min-width: 200px) {
+  /* SHOWCASE ****************************************************/
+  .showcase {
+    background-color: #5d8965;
+    background-image: url("../imgAB/analogBreather.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 16%;
+    padding: 10% 0 50%; }
+    .showcase h3 {
+      padding: 15% 0 10%;
+      opacity: .65;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      text-transform: lowercase; }
+    .showcase form {
+      margin: auto; }
+      .showcase form button {
+        background-color: #8c7457;
+        border: 1px solid #706150;
+        width: 100%; }
+      .showcase form button:focus {
+        outline: none; }
+      .showcase form button:hover {
+        background-color: #836c51;
+        color: #d5d5d5; }
 
-/*# sourceMappingURL=custom.css.map */
+  footer {
+    font-size: 1rem;
+    height: 3%; }
+    footer p {
+      text-align: center; } }
+/* MEDIA MIN 300px ************************************************************************************************************************************/
+@media (min-width: 300px) {
+  /* SHOWCASE ****************************************************/
+  .showcase {
+    margin-top: 16%;
+    padding: 0 0 20%; }
+    .showcase h3 {
+      padding: 10% 0; } }
+/* MEDIA MIN 400px ************************************************************************************************************************************/
+@media (min-width: 400px) {
+  /* SHOWCASE ****************************************************/
+  .showcase {
+    margin-top: 16%;
+    padding: 0 0 20%; } }
+/* MEDIA MIN 500px ************************************************************************************************************************************/
+@media (min-width: 500px) {
+  /* SHOWCASE ****************************************************/
+  .showcase {
+    margin-top: 13%;
+    padding: 0 0 20%; } }
+/* MEDIA MIN 600px ************************************************************************************************************************************/
+@media (min-width: 600px) {
+  /* SHOWCASE ****************************************************/
+  .showcase {
+    margin-top: 8%;
+    padding: 0 0 20%; }
+    .showcase form {
+      margin: auto; }
+      .showcase form .form-control {
+        margin: auto;
+        width: 75%; }
+      .showcase form button {
+        width: 75%; }
+      .showcase form button:focus {
+        outline: none; } }
+/* MEDIA MIN 700px ************************************************************************************************************************************/
+@media (min-width: 700px) {
+  /* SHOWCASE ****************************************************/
+  .showcase {
+    margin-top: 16%;
+    padding: 0 0 20%; }
+    .showcase form {
+      margin: auto; }
+      .showcase form button {
+        width: 75%; }
+      .showcase form button:focus {
+        outline: none; }
+      .showcase form button:hover {
+        background-color: #836c51;
+        color: #d5d5d5; } }
+/* MEDIA MIN 800px ************************************************************************************************************************************/
+@media (min-width: 800px) {
+  /* SHOWCASE ****************************************************/
+  .showcase {
+    margin-top: 5%;
+    padding: 0 0 20%; }
+    .showcase form .form-control {
+      width: 80%; }
+    .showcase form button {
+      width: 60%; } }
+/* MEDIA MIN 1000px *********************************************************************************************************************************/
+@media (min-width: 1000px) {
+  /* SHOWCASE SECTION****************************************************/
+  .showcase {
+    background-size: contain;
+    margin-top: 3%;
+    padding: 0 0 10%; }
+    .showcase h3 {
+      padding: 8% 0 4%; }
+    .showcase form .form-group {
+      margin: 2% auto; }
+      .showcase form .form-group .form-control {
+        width: 60%; }
+      .showcase form .form-group .form-control:focus {
+        border: 2px solid #8c7457;
+        outline: none; }
+    .showcase form textarea {
+      outline: none;
+      resize: none;
+      transition: all 1s; }
+    .showcase form textarea:focus {
+      border: 2px solid #8c7457;
+      height: 100px;
+      outline: none; }
+    .showcase form button {
+      background-color: #8c7457;
+      border: 1px solid #706150;
+      font-size: 2rem;
+      margin-top: 1%;
+      padding: 15px 0;
+      width: 35%; }
+
+  footer {
+    height: 3%; }
+    footer p {
+      font-size: 1.2rem;
+      text-align: center; } }
+
+/*# sourceMappingURL=contact.css.map */

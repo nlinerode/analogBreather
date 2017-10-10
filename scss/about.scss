@@ -1,33 +1,124 @@
 @import 'custom';
 
-@media(min-width: 1000px){
-  /* SHOWCASE SECTION****************************************************/
-  .showcase{
-    background-size: contain;
-    margin-top: 3%;
-    padding: 10% 0;
+@media(min-width:200px){
+  /* SHOWCASE ***********************************************************/
+  // .showcase{
+  //   padding: 10% 0 50%;
+  //   p{
+  //     font-size: 1.5rem;
+  //     margin-top: 5%;
+  //   }
+  // }
+
+  /* ABOUT P ************************************************************/
+  .about-p{
+    background-color: $tan;
+    font-size: 1.5rem;
+    padding: 10%;
+    text-align: left;
     h3{
-      margin-top:0;
-      padding:5% 0 0;
-      opacity: .65;
-      text-transform: lowercase;
+      text-align: center;
+    }
+    h4{
+      margin: 10% auto;
+      text-align: center;
+    }
+    p{
+      text-indent: -5%;
+    }
+  }
+
+  /* BAND SECTION ************************************************/
+.band{
+  background-color: $alien;
+  margin: 15% 5% 0;
+  text-align: center;
+  .member{
+    margin-top: 15%;
+    .member-desc{
+      margin-top: 10%;
+    }
+  }
+  .person{
+    margin: auto;
+  }
+  .about-btn{
+    color: $white;
+    background-color: $alien;
+    margin-top: 15%;
+  }
+  .about-btn:hover{
+    background-color: darken($alien, 5%);
+  }
+}
+
+  
+}
+
+@media (min-width: 700px){
+  .band{
+    margin: 10% 5%;
+    padding: 0 0 5%;
+  }
+}
+
+@media (min-width: 800px){
+  .band{
+    .member{
+      margin-top: 5%;
+    }
+  }
+}
+
+@media(min-width: 1000px){
+/* SHOWCASE SECTION****************************************************/
+// .showcase{
+//   background-size: contain;
+//   margin-top: 3%;
+//   padding: 0;
+//   h3{
+//     margin-top:0;
+//     padding:5% 0 0;
+//     opacity: .65;
+//     text-transform: lowercase;
+//   }
+// }
+
+  /* ABOUT P ************************************************************/
+  .about-p{
+    background-color: $tan;
+    font-size: 1.5rem;
+    padding: 10%;
+    text-align: left;
+    h3{
+      text-align: center;
+    }
+    h4{
+      margin: 5% auto;
+      text-align: center;
+    }
+    p{
+      line-height: 1.7;
+      text-indent: -5%;
     }
   }
 
 
-      /* MUSIC SECTION ****************************************************/
-      .music{
-        // margin-top: 15%;
-        background-color: $alien;
-        margin: 15% 0 0;
-        padding: 3% 0;
-        h4{
-          font-size: 3rem;
-        }
-        .social-image{
-          margin: auto;
-          width: 30%;
-        }
-      }
-    
+    /* MUSIC SECTION ****************************************************/
+//     .music{
+//       margin: 15% 0 0;
+//       padding: 3% 0;
+//       h4{
+//         font-size: 3rem;
+//       }
+//       .social-image{
+//         margin: auto;
+//         width: 30%;
+//       }
+//       .bc-img{
+//   margin:auto;
+//   width: 70%;
+// }
+//     }
+  
 }
